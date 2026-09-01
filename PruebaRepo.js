@@ -1,0 +1,1 @@
+console.log("hola profe creo que ya pude vincular el git a ubuntu");

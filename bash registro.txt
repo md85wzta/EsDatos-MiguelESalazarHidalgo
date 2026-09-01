@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Nombre del alumno
+ALUMNO=("dany_cambrano")
+
+# Ruta base donde se guardarán los repositorios
+RUTA_BASE="/home/git/repo2026"
+
+echo "Iniciando creación de repositorios..."
+
+for alumno in "${ALUMNOS[@]}"; do
+    CARPETA_REPO="${RUTA_BASE}/${alumno}.git"
+    
+    if [ ! -d "$CARPETA_REPO" ]; then
+        # Crear la carpeta del repositorio
+        mkdir -p "$CARPETA_REPO"
+        
+        # Inicializar como repositorio bare
+        cd "$CARPETA_REPO" && git init --bare --quiet
+        
+        # Asignar al usuario git como propietario
+        chown -R git:git "$CARPETA_REPO"
+        
+        echo "Creado con éxito: ${alumno}.git"
+    else
+        echo "El repositorio para ${alumno} ya existe."
+    fi
+done
+
+echo "¡Proceso finalizado!"
