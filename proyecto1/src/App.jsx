@@ -31,7 +31,7 @@ function App() {
       alert("ok sale bai, te lo pierdes ://///")
     }
   }
-
+  //funcion para recorrer el arreglo y mostrar los elementos
   const recorrerElemetos = () => {
     return elementos.map((elem) => {
       return <li>Elemento: {elem}</li>;
