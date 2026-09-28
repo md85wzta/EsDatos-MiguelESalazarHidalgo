@@ -1,0 +1,18 @@
+import EjemploArreglo from './componentes/EjemploArreglo'
+import Pila from './componentes/pila'
+import Ejemplo2 from './componentes/Ejemplo2'
+import md85wzta from './componentes/md85wzta'
+import './App.css'
+
+function App() {
+ 
+  return (
+    <>
+    <EjemploArreglo />
+    <Pila />
+    <Ejemplo2 />
+    <md85wzta />
+    </>
+  )
+}
+export default App
