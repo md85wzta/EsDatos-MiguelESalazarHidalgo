@@ -1,5 +1,5 @@
 import EjemploArreglo from './componentes/EjemploArreglo'
-import Pila from './componentes/Pila'
+import Pila from './componentes/pila'
 import './App.css'
 
 function App() {
