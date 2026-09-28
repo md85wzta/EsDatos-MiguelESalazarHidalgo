@@ -1,3 +1,4 @@
+//importar datos para simular una pila de datos
 import { useState } from "react";
 
 function Pila() {
@@ -26,10 +27,13 @@ function Pila() {
     <>
       <div
         style={{
+            marginTop: "20px",
           padding: "20px",
           fontFamily: "Arial, sans-serif",
           maxWidth: "400px",
           margin: "0 auto",
+          backgroundColor: "#f9f9f9",
+          borderRadius: "30px",
         }}
       >
         <h2>Visualizar los datos de la Pila</h2>
@@ -40,11 +44,11 @@ function Pila() {
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             placeholder="Introduce un dato"
-            style={{ padding: "8px", marginRight: "10px" }}
+            style={{ padding: "8px", marginRight: "10px", borderRadius: "20px", border: "1px solid #ccc", width: "60%" }}
           />
           <button
             type="submit"
-            style={{ padding: "8px 12px", background: "#4CAF50" }}
+            style={{ padding: "8px 12px", background: "#4CAF50", borderRadius: "20px", color: "white", cursor: "pointer" }}
           >
             Push
           </button>
@@ -57,7 +61,7 @@ function Pila() {
             padding: "8px 12px",
             background: "#f44336",
             color: "white",
-            border: "none",
+            borderRadius: "20px",
             cursor: "pointer",
             marginBottom: "20px",
           }}
@@ -66,13 +70,13 @@ function Pila() {
         </button>
 
         {/* Información del tope y tamaño */}
-      <div style={{ marginBottom: '20px', backgroundColor: '#f0f0f0', padding: '10px', borderRadius: '4px' }}>
+      <div style={{ marginBottom: '20px', backgroundColor: '#f0f0f0', padding: '10px', borderRadius: '15px' }}>
         <p><strong>Tope actual:</strong> {elementoTope}</p>
         <p><strong>Tamaño de la pila:</strong> {stack.length}</p>
       </div>
 
       {/* Representación visual de la Pila */}
-      <div style={{ border: '2px solid #333', borderTop: 'none', padding: '10px', display: 'flex', flexDirection: 'column', gap: '5px', minHeight: '150px', justifyContent: 'end' }}>
+      <div style={{ border: '2px solid #333', borderTop: 'none', padding: '10px', display: 'flex', flexDirection: 'column', gap: '5px', minHeight: '150px', justifyContent: 'end', borderRadius: '15px', backgroundColor: '#ffffffe3' }}>
         {stack.length === 0 ? (
           <p style={{ textAlign: 'center', color: '#999' }}>Estructura vacía</p>
         ) : (
