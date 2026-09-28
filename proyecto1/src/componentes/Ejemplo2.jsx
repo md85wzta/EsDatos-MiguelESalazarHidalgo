@@ -15,13 +15,14 @@ function Ejemplo2() {
         e.preventDefault();
         if (nuevoNombre.trim() === "") return;
         const nuevoAlumno={
-            id: Data.now(),
+            id: Date.now(),
             nombre: nuevoNombre,
             asistencia: 0
         }
         //meter valores al arreglo
         setAlumnos([...alumnos, nuevoNombre]);
         nuevoNombre("");
+        console.log(alumnos)
 
         //eliminar
         const eliminarObjeto=(id)=>{
@@ -36,6 +37,9 @@ function Ejemplo2() {
         style={{
             marginTop: "20px", maxWidth: "500'px", margin: "0 auto"
         }}>
+            {alumnos.lenght===0?(
+            
+            ):}
         <h1>operaciones con arreglos</h1>
         {/*Formulario para agregar a los datos */}
         <form>
