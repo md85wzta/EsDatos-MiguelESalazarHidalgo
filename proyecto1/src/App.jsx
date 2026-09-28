@@ -9,7 +9,7 @@ function App() {
     <>
     <EjemploArreglo />
     <Pila />
-    {/* <Ejemplo2 /> */}
+    <Ejemplo2 />
     </>
   )
 }
