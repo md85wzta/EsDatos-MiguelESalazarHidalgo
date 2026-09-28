@@ -73,6 +73,9 @@ function Pila() {
       <div style={{ marginBottom: '20px', backgroundColor: '#f0f0f0', padding: '10px', borderRadius: '15px' }}>
         <p><strong>Tope actual:</strong> {elementoTope}</p>
         <p><strong>Tamaño de la pila:</strong> {stack.length}</p>
+        {stack.length === 67 ? (
+          <p style={{ color: 'red' }}>SIX SEVEN ELEMENTOS</p>
+        ) : null}
       </div>
 
       {/* Representación visual de la Pila */}

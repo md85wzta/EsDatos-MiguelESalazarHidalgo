@@ -1,5 +1,6 @@
 import EjemploArreglo from './componentes/EjemploArreglo'
 import Pila from './componentes/pila'
+import Ejemplo2 from './componentes/Ejemplo2'
 import './App.css'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
     <EjemploArreglo />
     <Pila />
+    {/* <Ejemplo2 /> */}
     </>
   )
 }
