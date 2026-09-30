@@ -4,7 +4,7 @@ import Ejemplo2 from './componentes/Ejemplo2'
 import md85wzta from './componentes/md85wzta'
 import './App.css'
 
-//hola
+//hola a todos jeje
 function App() {
  
   return (
