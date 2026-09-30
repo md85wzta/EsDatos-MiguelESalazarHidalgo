@@ -11,7 +11,6 @@ function App() {
     <EjemploArreglo />
     <Pila />
     <Ejemplo2 />
-    <md85wzta />
     </>
   )
 }
